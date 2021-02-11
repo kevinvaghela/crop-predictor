@@ -11,7 +11,7 @@ app = Flask(__name__)
 def home():
     return render_template('index.html')
 
-@app.route('/predict', methods=['POST','GET'])
+@app.route('/predict', methods=['POST'])
 def predict():
     if request.method == 'POST':
         n = int(request.form.get("N", False))
