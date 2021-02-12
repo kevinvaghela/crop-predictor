@@ -61,7 +61,7 @@ body{
 
 /* Text Area */
 .ml-container{
-    background-image: url("C:/Users/Kevin's PC/Desktop/car price prediction/templates/agri.png");
+    background-image: url("..template//agri.png");
     background-color: #d5e1df;
     border: 2px solid #000000;
     border-radius: 500px;
