@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+	<head>
+		<meta charset="utf-8">
+		<title>crop predictor</title>
+		<link rel="shortcut icon" href="../static/increase_production_agriculture_future_farming_icon.ico">
+		<link rel="stylesheet" type="text/css" href="../static/styles.css">
+		<script src="https://kit.fontawesome.com/5f3f547070.js" crossorigin="anonymous"></script>
+		<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+	</head>
+
+    <body>
+
+        <!-- Website Title -->
+		<div class="container">
+            <h2 class='container-heading'><span class="heading_font">Crop Predictor</span></h2>
+            <div class='description'>
+    			<p>Find the best crop for your climate condition.</p>
+    		</div>
+    	</div>
+
+		<!-- Result -->
+		<div class="results">
+			{% if prediction=="coconut" %}
+				<h1>Prediction: <span>Coconut(naariyal) is most suitable crop for this climate condition.</span></h1>
+			{% elif prediction=="chickpea" %}
+				<h1>Prediction: <span>Chickpea(kaabulee chana) is most suitable crop for this climate condition.</span></h1>
+			{% elif prediction=="jute" %}
+				<h1>Prediction: <span>Jute is most suitable crop for this climate condition.</span></h1>
+			{% elif prediction=="lentil" %}
+				<h1>Prediction: <span>Lentil(daal) is most suitable crop for this climate condition.</span></h1>
+			{% elif prediction=="watermelon" %}
+				<h1>Prediction: <span>watermelon(tarabooj) is most suitable crop for this climate condition.</span></h1>				
+			{% elif prediction=="banana" %}
+				<h1>Prediction: <span>Banana(kela) is most suitable crop for this climate condition.</span></h1>	
+			{% elif prediction=="orange" %}
+				<h1>Prediction: <span>Orange(santara) is most suitable crop for this climate condition.</span></h1>
+			{% elif prediction=="mungbean" %}
+				<h1>Prediction: <span>Mungbean(moong) is most suitable crop for this climate condition.</span></h1>	
+			{% elif prediction=="apple" %}
+				<h1>Prediction: <span>Apple(seb) is most suitable crop for this climate condition.</span></h1>
+			{% elif prediction=="cotton" %}
+				<h1>Prediction: <span>cotton(kapaas) is most suitable crop for this climate condition.</span></h1>
+			{% elif prediction=="mango" %}
+				<h1>Prediction: <span>Mango(aam) is most suitable crop for this climate condition.</span></h1>	
+			{% elif prediction=="grapes" %}
+				<h1>Prediction: <span>Grapes(angoor) is most suitable crop for this climate condition.</span></h1>
+			{% elif prediction=="blackgram" %}
+				<h1>Prediction: <span>Blackgram(kaala chana) is most suitable crop for this climate condition.</span></h1>
+			{% elif prediction=="muskmelon" %}
+				<h1>Prediction: <span>Muskmelon(kharabooja) is most suitable crop for this climate condition.</span></h1>
+			{% elif prediction=="coffee" %}
+				<h1>Prediction: <span>Coffee is most suitable crop for this climate condition.</span></h1>
+			{% elif prediction=="mothbeans" %}
+				<h1>Prediction: <span>Mothbeans(moth) is most suitable crop for this climate condition.</span></h1>
+			{% elif prediction=="kidneybeans" %}
+				<h1>Prediction: <span>Kidneybeans(raajama) is most suitable crop for this climate condition.</span></h1>
+			{% elif prediction=="pigeonpeas" %}
+				<h1>Prediction: <span>Pigeonpeas(arahar) is most suitable crop for this climate condition.</span></h1>
+			{% elif prediction=="pomegranate" %}
+				<h1>Prediction: <span>Pomegranate(anaar) is most suitable crop for this climate condition.</span></h1>
+			{% elif prediction=="maize" %}
+				<h1>Prediction: <span>Maize(makka) is most suitable crop for this climate condition.</span></h1>
+			{% elif prediction=="rice" %}
+				<h1>Prediction: <span>Rice(chaaval) is most suitable crop for this climate condition.</span></h1>				
+            {% elif prediction=="papaya" %}
+				<h1>Prediction: <span>papaya is most suitable crop for this climate condition.</span></h1>
+			{% endif %}
+		</div>
+
+		<!-- Footer -->
+       <div class='footer'>
+           <div class="contact">
+               <a target="_blank" href="https://github.com/kevinvaghela"><i class="fab fa-github fa-lg contact-icon"></i></a>
+               <a target="https://www.linkedin.com/in/kevinvaghela"><i class="fab fa-linkedin fa-lg contact-icon"></i></a>
+           </div>
+           <p class='footer-description'>Made with ❤️ by Kevin vaghela.</p>
+       </div>
+
+	</body>
+</html>
