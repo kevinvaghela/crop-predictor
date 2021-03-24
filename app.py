@@ -14,9 +14,9 @@ def home():
 @app.route('/predict', methods=['POST'])
 def predict():
     if request.method == 'POST':
-        n = int(request.form.get("N", False))
-        p = int(request.form.get("P", False))
-        k = int(request.form.get("K", False))
+        n = float(request.form.get("N", False))
+        p = float(request.form.get("P", False))
+        k = float(request.form.get("K", False))
 #        temp = float(request.form.get("temperature", False))
         humidity = float(request.form.get("humidity", False))
 #        ph = float(request.form.get("ph", False))
